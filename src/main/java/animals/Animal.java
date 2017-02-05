@@ -6,7 +6,7 @@ import lombok.Data;
 @Data
 public abstract class Animal {
     public boolean eat(Food food){
-        return this.getType()==food.getType();
+        return this.getAnimalType()==food.getFoodTypeFor();
     }
-    private int type;
+    public abstract int getAnimalType();
 }

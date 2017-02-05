@@ -13,5 +13,9 @@ public class Main {
         Animal herbivorous=new Goat();
         System.out.println(herbivorous.eat(new Grass()));
         System.out.println(herbivorous.eat(new Cow()));
+
+        Animal cow=new Cow();
+        System.out.println(cow.eat(new Grass()));
+        System.out.println(cow.eat(new Cow()));
     }
 }
